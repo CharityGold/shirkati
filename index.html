@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Барои Азимҷон</title>
+    <title>Барои Азимҷони далбаёб</title>
     <style>
         body { 
             margin: 0; 
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-            background: #1a1a2e; /* Ранги шабона */
+            background: #1a1a2e; 
             color: #fff; 
             display: flex; 
             justify-content: center; 
@@ -26,7 +26,7 @@
             width: 400px; 
             border: 2px solid #e94560;
         }
-        h1 { color: #e94560; margin-bottom: 10px; }
+        h1 { color: #e94560; margin-bottom: 10px; font-size: 24px; }
         p { font-size: 16px; line-height: 1.6; color: #a2a8d3; }
         
         .btn { 
@@ -59,45 +59,48 @@
         @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
 
         .poem-text { 
-            font-size: 20px; 
+            font-size: 17px; 
             font-weight: bold; 
             color: #fff; 
-            margin: 25px 0; 
-            line-height: 1.8;
+            margin: 20px 0; 
+            line-height: 1.6;
             font-style: italic; 
             background: #0f172a;
-            padding: 20px;
+            padding: 15px;
             border-radius: 15px;
             border-left: 4px solid #43dde6;
+            text-align: left;
         }
         .highlight { color: #43dde6; }
     </style>
 </head>
 <body>
 
-    <!-- Саҳифаи аввал: Даромадгоҳ -->
+    <!-- Саҳифаи аввал -->
     <div id="welcome-page" class="container">
-        <div class="emoji">😴</div>
-        <h1>Салом, Азимҷон!</h1>
-        <p>Ин саҳифаи махфӣ танҳо барои як рафиқи хоболуд сохта шудааст. Агар аз хоб хеста бошӣ, тугмаро пахш кун!</p>
-        <button class="btn" onclick="showPoem()">Даромадан ва Хондан 🚀</button>
+        <div class="emoji">💢</div>
+        <h1>Азимҷони далбаёб, кай одам мешавӣ?</h1>
+        <p>Ту чи карда истодаӣ дар ин дунё? Агар одам шуданат мушкил бошад, рав худатро ислоҳ кун ё ба як кас бидеҳ нағз шав! Тугмаро зер кун то ҳақиқатро бинӣ.</p>
+        <button class="btn" onclick="showPoem()">Кушодан ва Бинӣ 🚀</button>
     </div>
 
-    <!-- Саҳифаи дуюм: Шеър -->
+    <!-- Саҳифаи дуюм -->
     <div id="poem-page" class="container" style="border-color: #43dde6;">
-        <div class="emoji">🛌💤</div>
-        <h2 style="color: #43dde6; margin-top: 0;">Қаҳрамони Хоб!</h2>
+        <div class="emoji">🛵💥</div>
+        <h2 style="color: #43dde6; margin-top: 0;">Танбеҳ барои ту!</h2>
         
         <div class="poem-text">
-            Эй Азимҷони рафиқ, <span class="highlight">паҳлавони хоб</span>,<br>
-            То кай мебинӣ ту дар бистар сароб?<br><br>
-            Рӯз нисф шуду ҳама дар коранд,<br>
-            Хез аз ҷоят, эй ҷӯраи камёб!<br><br>
-            <span class="highlight">Скутерҳо монданд</span>, корҳо истод,<br>
-            Хобро бас куну, шав дигар бедор!
+            Эй Азимҷони далбаёб, кай одам мешавӣ?<br>
+            Агар одам шуданат душвор аст, беҳуда намешавӣ!<br>
+            Рав ба касе бидеҳ нағз шав, то холӣ шавад сарат,<br>
+            Мардум ҳама дар пешан, ту ҳанӯз дар хоби марат.<br><br>
+            <span class="highlight">Скутерҳо</span> дар куҷо монданд, корат ба куҷо кашид?<br>
+            Мур ба ин рӯзҳои ту, ки кас қадре насанҷид!<br>
+            Фикр мекунӣ чи кор карда истодаӣ бо ин ҳолат?<br>
+            Хез аз ин хоби ғафлат, бас кун ин беақлиро фарёд!
         </div>
 
-        <button class="btn" style="background:#43dde6; color:#1a1a2e;" onclick="goBack()">Боз рафта хоб кардан 😴</button>
+        <button class="btn" style="background:#43dde6; color:#1a1a2e;" onclick="goBack()">Боз хоб кардан мехоҳӣ? 🛑</button>
     </div>
 
     <script>
@@ -107,7 +110,7 @@
         }
 
         function goBack() {
-            alert("Неее, хез аз ҷоят! Дигар хоб мумкин нест! 😂");
+            alert("Не, дигар хоб нест! Хез аз ҷоят, айб аст! 😡");
         }
     </script>
 
